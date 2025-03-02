@@ -47,7 +47,7 @@ namespace Proyecto_CRUD.Models
             Edad = edad;
             Apellidos = apellidos;
             FechaNacimiento = fechaNacimiento;
-            NombreCompleto = $"{Nombres}{Apellidos}";
+            NombreCompleto = $"{Nombres}+{Apellidos}";
         }
         #endregion Constructor
 

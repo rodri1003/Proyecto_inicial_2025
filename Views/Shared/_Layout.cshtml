@@ -4,9 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - MVC</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-          crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha384-uecf6D7AH/j8KH7AzYj9DLAViXqbJYh/uDkUnlFVJ1aPtkEkZfWfs3WfRGTkO8h+" crossorigin="anonymous">
+
+    <!-- Bootstrap 5.3.2 (Solo una referencia) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
@@ -34,6 +36,7 @@
         </nav>
     </header>
 
+    <!-- Si sigue estrecho, cambia "container" por "container-fluid" -->
     <div class="container mt-4">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -42,10 +45,11 @@
 
     <footer class="border-top footer text-muted text-center py-3">
         <div class="container">
-            &copy; 2025 - MVC - <a asp-area="" asp-controller="Privacy" asp-action="Index">Privacy</a>
+            &copy; 2025 - MVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             crossorigin="anonymous"></script>
 

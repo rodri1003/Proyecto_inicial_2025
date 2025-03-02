@@ -11,10 +11,12 @@
     </ol>
 </nav>
 
-<form asp-action="Create" asp-controller="Alumnos" method="POST">
-<div asp-validation-summary="All"> 
-    <i class="bi bi-exclamation-triangle-fill"></i>
-</div>
+<form asp-action="UpSert" asp-controller="Alumnos" method="POST">
+    <div asp-validation-summary="All">
+        <i class="bi bi-exclamation-triangle-fill"></i>
+    </div>
+    <input type="hidden" asp-for="AlumnoId" value="@Model.AlumnoId" placeholder="AlumnoId" aria-label="AlumnoId">
+
 
     <div class="input-group mb-3">
         <span class="input-group-text" id="basic-addon1">
@@ -63,5 +65,5 @@
 </form>
 
 @section Scripts {
-    <partial name ="_validationScriptsPartial" />
+    <partial name="_validationScriptsPartial" />
 }
